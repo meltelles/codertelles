@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  height: 600px;
+  flex-direction: column;
+  padding: 1em;
+  background-color: antiquewhite;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+nav {
+  padding: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .grid-index {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "image info"
+      "gallery gallery"
+      "footer footer";
+    grid-template-rows: 100px 0.6fr 0.3fr 75px;
+    grid-template-columns: 50% 50%;
+  }
+
+  .grid-contact {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "description description"
+      "form location"
+      "footer footer";
+    grid-template-rows: 100px 0.2fr 0.6fr 75px;
+    grid-template-columns: auto 60%;
+  }
+}
+/*--grilla index--*/
+
+header {
+  grid-area: header;
+}
+
+footer {
+  grid-area: footer;
+}
+
+section#gallery {
+  grid-area: gallery;
+  display: flex;
+  justify-content: space-around;
+}
+
+section#gallery img {
+  max-width: 30%;
+  object-fit: contain;
+}
+
+section#info {
+  grid-area: info;
+}
+
+section#image {
+  grid-area: image;
+  overflow: hidden;
+}
+
+section#image img {
+  object-fit: cover;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/*--grilla contacto*/
+
+section#description {
+  grid-area: description;
+}
+
+section#location {
+  grid-area: location;
+}
+section#form {
+  grid-area: form;
+}
+
+/*--menu de navegación--*/
+.banner {
+  background-image: url(../img/fondo.jpg);
+  /* background-color: rgb(250, 252, 250); */
+  background-size: cover;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  text-align: center;
+}
+
+.menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/*--estilos--*/
+
+.border {
+  border: 2px solid black;
+  border-radius: 0.5em;
+  background-color: rgb(235, 230, 230);
+  margin: 10px 5px;
+}
+
+.border h2 {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.border .border-content {
+  padding: 1em 5%;
+}
+
+.border .border-content img {
+  margin: 0 auto;
+}
+
+.border .border-content p {
+  text-align: justify;
+}
+
+.border .border-content .map {
+  display: flex;
+}
+
+.border .border-content .map img {
+  max-width: 100%;
+}
+
+/*--estilo form--*/
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: 0;
+}
+fieldset label {
+  font-weight: 600;
+}
+
+fieldset .form-input {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 5px 0;
+}
+
+fieldset .form-select {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+  padding: 10px 0;
+}
+
+fieldset input[type="text"],
+input[type="email"],
+select {
+  padding: 12px;
+  border: 1px solid #c6c6c6;
+}
+
+fieldset button {
+  background-color: #506982;
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 12px 0;
+  font-size: 16px;
+  margin: 20px 20px 0px 20px;
+}
