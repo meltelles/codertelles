@@ -2,3 +2,37 @@
     margin: 0;
     padding: 0;
 }
+/*Barrasuperior*/
+.top-header-bar {
+    padding: 0.25rem;
+    display: flex;
+    width: 100%;
+    background-color: #3d3d3d;
+    list-style: none;
+}
+.top-bar-column-first {
+    color: aliceblue;
+    width: 50%;
+    font-size: 14px;
+}
+.top-bar-column-second {
+    text-align: end;
+    width: 50%;
+    color: aliceblue;
+    font-size: 14px;
+}
+/*TopBar*/
+.header {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.imgprincipal img {
+    width: 100%;
+    height: auto;
+}
+.logoprincipal img {
+    width: 5px;
+    height: 5px;
+}
+h1 {
+    text-align: center;
+}
