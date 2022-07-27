@@ -36,3 +36,13 @@
 h1 {
     text-align: center;
 }
+/* media para celular*/
+@media (min-width: 320px) and (max-width: 576px) {
+    
+}
+/*media para tablet*/
+@media (min-width: 577px) and (max-width: 991px) {
+    .header {
+        flex-wrap: wrap;
+    }
+}
